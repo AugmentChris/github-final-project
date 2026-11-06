@@ -1,7 +1,7 @@
 #!/bin/bash
 # Tests for simple-interest.sh
 set -u
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit 1
 fail=0
 
 check() {
